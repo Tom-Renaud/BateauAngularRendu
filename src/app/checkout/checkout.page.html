@@ -1,0 +1,21 @@
+<app-toolbar></app-toolbar>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let id of cart.allIds">
+      <button ion-button class="b">
+        <ion-img src="assets/images/poulpe.png" class="img"></ion-img>
+        <label>{{ cart.byId[id].name }}</label>
+        <label>{{ formatTotalPerUnit(cart.byId[id]) }}</label>
+        <div>
+          <button ion-button (click)="addProduit(cart.byId[id])"> + </button>
+          <button ion-button (click)="delProduit(cart.byId[id])"> - </button>
+        </div>
+      </button>
+    </ion-row>
+    <ion-row>
+      Total: {{ getTotal()}}€
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

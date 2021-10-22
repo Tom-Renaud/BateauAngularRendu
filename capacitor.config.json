@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "BateauThibaultAngular",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

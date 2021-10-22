@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+  <ion-text>
+    Nos restaurants partenaires
+  </ion-text>
+  <ion-text>
+    Tous les restaurants partenaires avec le bateau de Thibault
+  </ion-text>
+  <app-infocontact></app-infocontact>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(restaurant1)">
+          <label>Bistrot des Gascons</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(restaurant2)">
+          <label>Les fous de l'île</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(restaurant3)">
+          <label>Bistrot Landais</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(restaurant4)">
+          <label>Villa 9-trois</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(restaurant5)">
+          <label>Bistrot du Sommelier</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToContact()">
+          <label>Devenez partenaire</label>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

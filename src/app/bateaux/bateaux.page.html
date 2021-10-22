@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true">
+  <ion-text>
+    Nos bateaux partenaires
+  </ion-text>
+  <ion-text>
+    Tout les eaux menent à Thibault
+  </ion-text>
+  <app-infocontact></app-infocontact>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(bateau1)">
+          <ion-img src="assets/images/deLaBrise_icon.png"></ion-img>
+          <label>De la Brise</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(bateau2)">
+          <ion-img src="assets/images/saphir_icon.png"></ion-img>
+          <label>Saphir</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(bateau3)">
+          <ion-img src="assets/images/gastMicher_icon.png"></ion-img>
+          <label>Gast Micher</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(bateau4)">
+          <ion-img src="assets/images/aquilon_icon.png"></ion-img>
+          <label>Aquilon</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="goToContact()">
+          <ion-img src="assets/images/ancre.png"></ion-img>
+          <label>Contact</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToContact()">
+          <ion-img src="assets/images/ancre.png"></ion-img>
+          <label>Contact</label>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

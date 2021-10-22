@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true">
+  <ion-text>
+    Nos recettes
+  </ion-text>
+  <ion-text>
+    Tout les recettes du bateau de Thibault.
+  </ion-text>
+  <app-infocontact></app-infocontact>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(recette1)">
+          <ion-img src="assets/images/homardRecette_icon.png"></ion-img>
+          <label>Homard</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(recette2)">
+          <ion-img src="assets/images/saintJacques_icon.png"></ion-img>
+          <label>Saint-Jacques</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(recette3)">
+          <ion-img src="assets/images/barRecette_icon.png"></ion-img>
+          <label>Bar</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(recette4)">
+          <ion-img src="assets/images/poulpe.png"></ion-img>
+          <label>Tourteau</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(recette5)">
+          <ion-img src="assets/images/poulpe.png"></ion-img>
+          <label>Recette</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="onLoadAppareil(recette5)">
+          <ion-img src="assets/images/poulpe.png"></ion-img>
+          <label>Recette</label>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

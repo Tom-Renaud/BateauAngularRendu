@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true" class=globalcontent>
+  <div class=block1>
+    <div>
+      <ion-text class=thibault>
+        Le bateau de Thibault
+      </ion-text>
+    </div>
+    <ion-text>
+      Vente en direct de notre bateau
+      Produit selon la saison, livraisons sur Paris
+    </ion-text>
+    <app-infocontact></app-infocontact>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <button ion-button (click)="goToProduits()" class=b1>
+        <ion-img src="assets/images/poisson.png"></ion-img>
+        <label>Produits et promotions</label>
+      </button>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="goToBateaux()" class=b1>
+          <ion-img src="assets/images/ancre.png" class=img2></ion-img>
+          <label>Bateaux</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToRestaurants()" class=b1>
+          <ion-img src="assets/images/restaurant.png"></ion-img>
+          <label>Restaurants</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="goToRecettes()" class=b1>
+          <ion-img src="assets/images/recette.png"></ion-img>
+          <label>Recettes</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button (click)="goToContact()" class=b1>
+          <ion-img src="assets/images/tourteau.png"></ion-img>
+          <label>Contact</label>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
